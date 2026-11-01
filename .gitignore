@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+local_data/
+workspace/
+models/
+checkpoints/
+*.pkl
+*.pickle
+*.joblib
+*.zip
+*.log

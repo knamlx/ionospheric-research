@@ -1,0 +1,81 @@
+{
+  "experiment_id": "fof2_fast_ml_24h",
+  "feature_dir": "features_2024_2025_exploration_v0_1_15min",
+  "output_dir": "artifacts/fof2_fast_ml_24h",
+  "dataset_step": "15min",
+  "evaluation_mode": "walk_forward_daily",
+  "stations": "all",
+  "target": "foF2",
+  "horizons": [
+    "24h"
+  ],
+  "ml_date_start": "2025-01-01T00:00:00Z",
+  "ml_date_end": "2026-01-01T00:00:00Z",
+  "test_start": "2025-01-01T00:00:00Z",
+  "test_end": "2026-01-01T00:00:00Z",
+  "window_list": [
+    7,
+    21,
+    28
+  ],
+  "minimum_train_rows": 48,
+  "minimum_eval_rows": 2,
+  "minimum_feature_coverage": 0.3,
+  "models": [
+    "LinearRegression",
+    "ElasticNet",
+    "RandomForest",
+    "XGBoost",
+    "CatBoost"
+  ],
+  "automl": {
+    "enabled": false,
+    "method": "optuna_tpe_pruning",
+    "models": [],
+    "metric": "RMSE",
+    "n_trials": 0,
+    "val_days": 1,
+    "test_h": 24,
+    "random_state": 42,
+    "storage": "sqlite:///artifacts/fof2_fast_ml_24h/optuna.db",
+    "train_final_on_train_validation": true,
+    "export_trials_parquet": false,
+    "export_predictions_parquet": true,
+    "save_models": false
+  },
+  "hyperparameter_spaces": {},
+  "model_params": {
+    "ElasticNet": {
+      "alpha": 1.0,
+      "l1_ratio": 0.5,
+      "max_iter": 5000,
+      "random_state": 42
+    },
+    "RandomForest": {
+      "n_estimators": 300,
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "n_jobs": 1,
+      "random_state": 42
+    },
+    "XGBoost": {
+      "objective": "reg:squarederror",
+      "n_estimators": 300,
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "n_jobs": 1,
+      "verbosity": 0,
+      "random_state": 42
+    },
+    "CatBoost": {
+      "loss_function": "RMSE",
+      "iterations": 500,
+      "depth": 6,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 3.0,
+      "random_seed": 42,
+      "thread_count": 1,
+      "verbose": false
+    }
+  }
+}

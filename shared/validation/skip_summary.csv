@@ -1,0 +1,6 @@
+phase,target,reason,tasks,days
+confirmation,DB049,insufficient_test,10,2
+exploratory,DB049,insufficient_test,15,1
+exploratory,EB040,insufficient_test,15,1
+exploratory,PQ052,insufficient_test,270,26
+exploratory,PQ052,insufficient_train,140,21

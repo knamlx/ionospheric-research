@@ -1,0 +1,67 @@
+{
+  "dataset_step": "15min",
+  "time_column": "time_utc",
+  "station_column": "station",
+  "targets": [
+    "foF2"
+  ],
+  "forecast_horizons": [
+    "15min",
+    "1h",
+    "3h",
+    "6h",
+    "24h"
+  ],
+  "state_columns": [
+    "foF2",
+    "MUF_D",
+    "hmF2",
+    "TEC"
+  ],
+  "driver_columns": [
+    "gfz_Kp",
+    "gfz_ap",
+    "gfz_Ap",
+    "gfz_Fobs",
+    "gfz_Fadj",
+    "bz_gsm_nT",
+    "dst_nT",
+    "flow_speed_km_s",
+    "proton_density_n_cc"
+  ],
+  "lag_columns": [
+    "foF2",
+    "MUF_D",
+    "hmF2",
+    "TEC",
+    "gfz_Kp",
+    "gfz_ap",
+    "gfz_Ap",
+    "gfz_Fobs",
+    "gfz_Fadj",
+    "bz_gsm_nT",
+    "dst_nT",
+    "flow_speed_km_s",
+    "proton_density_n_cc"
+  ],
+  "lags": [
+    "15min",
+    "30min",
+    "1h",
+    "3h",
+    "6h",
+    "12h",
+    "24h",
+    "48h",
+    "7D"
+  ],
+  "diff_lags": [
+    "15min",
+    "1h",
+    "3h",
+    "24h"
+  ],
+  "minimum_feature_coverage": 0.3,
+  "include_station_metadata": true,
+  "station_metadata_path": "configs/stations_metadata.csv"
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "expected_tasks": 5415,
+  "completed": 4965,
+  "skipped": 450,
+  "errors": 0,
+  "source_hashes_verified": 21,
+  "model_replays": 300,
+  "warnings": 0,
+  "causal_checks": 15,
+  "train_medians_and_feature_selection": "every completed split",
+  "matching_timestamps": "intersection of all windows and gaps; excluded origins reported",
+  "prediction_rows": 465265,
+  "created": "2026-10-31T15:13:32.804976"
+}

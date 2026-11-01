@@ -1,0 +1,4 @@
+station,raw_rows,accepted_rows,rejected_quality,rejected_value,missing_or_unparseable_rows,duplicate_timestamps,valid_15min_bins,raw_to_panel_equal
+EB040,155539,145603,8136,0,1800,0,51304,True
+DB049,153413,143930,6534,0,2949,0,50580,True
+PQ052,160313,149249,8353,0,2711,3,48258,True
