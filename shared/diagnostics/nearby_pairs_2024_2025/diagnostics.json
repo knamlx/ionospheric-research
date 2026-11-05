@@ -1,0 +1,659 @@
+{
+  "period_start": "2024-01-01 00:00:00+00:00",
+  "period_end_exclusive": "2026-01-01 00:00:00+00:00",
+  "observed_bins": 70176,
+  "station_coverage": [
+    {
+      "station": "PQ052",
+      "valid_bins": 67065,
+      "coverage_pct": 95.56686046511628,
+      "longest_gap": {
+        "bins": 410,
+        "hours": 102.5,
+        "start": "2024-03-21 04:30:00+00:00",
+        "end_exclusive": "2024-03-25 11:00:00+00:00"
+      },
+      "2024_coverage_pct": 93.75853825136612,
+      "2025_coverage_pct": 97.38013698630137
+    },
+    {
+      "station": "SO148",
+      "valid_bins": 64048,
+      "coverage_pct": 91.26766985864113,
+      "longest_gap": {
+        "bins": 1449,
+        "hours": 362.25,
+        "start": "2024-12-22 04:45:00+00:00",
+        "end_exclusive": "2025-01-06 07:00:00+00:00"
+      },
+      "2024_coverage_pct": 90.2834699453552,
+      "2025_coverage_pct": 92.25456621004567
+    },
+    {
+      "station": "IC437",
+      "valid_bins": 65118,
+      "coverage_pct": 92.79240766073872,
+      "longest_gap": {
+        "bins": 168,
+        "hours": 42.0,
+        "start": "2025-08-12 09:30:00+00:00",
+        "end_exclusive": "2025-08-14 03:30:00+00:00"
+      },
+      "2024_coverage_pct": 94.86566484517304,
+      "2025_coverage_pct": 90.71347031963471
+    },
+    {
+      "station": "JJ433",
+      "valid_bins": 65060,
+      "coverage_pct": 92.70975832193342,
+      "longest_gap": {
+        "bins": 23,
+        "hours": 5.75,
+        "start": "2025-06-01 23:30:00+00:00",
+        "end_exclusive": "2025-06-02 05:15:00+00:00"
+      },
+      "2024_coverage_pct": 94.2509107468124,
+      "2025_coverage_pct": 91.16438356164383
+    }
+  ],
+  "pair_coverage": [
+    {
+      "pair": "PQ052_SO148",
+      "common_bins": 61383,
+      "common_coverage_pct": 87.47007523939808,
+      "longest_joint_gap": {
+        "bins": 1449,
+        "hours": 362.25,
+        "start": "2024-12-22 04:45:00+00:00",
+        "end_exclusive": "2025-01-06 07:00:00+00:00"
+      },
+      "mean_a_minus_b_mhz": -0.08829419032194802,
+      "median_absolute_level_difference_mhz": 0.23749999999999982
+    },
+    {
+      "pair": "IC437_JJ433",
+      "common_bins": 61407,
+      "common_coverage_pct": 87.50427496580028,
+      "longest_joint_gap": {
+        "bins": 168,
+        "hours": 42.0,
+        "start": "2025-08-12 09:30:00+00:00",
+        "end_exclusive": "2025-08-14 03:30:00+00:00"
+      },
+      "mean_a_minus_b_mhz": -0.41230984252609637,
+      "median_absolute_level_difference_mhz": 0.47500000000000053
+    }
+  ],
+  "correlations": [
+    {
+      "pair": "PQ052_SO148",
+      "transform": "raw",
+      "period": "2024-2025",
+      "pearson": 0.9814449938981461,
+      "spearman": 0.9835227059870257,
+      "n": 61383,
+      "pearson_ci95_low": 0.9790285344090861,
+      "pearson_ci95_high": 0.9833578398433779
+    },
+    {
+      "pair": "PQ052_SO148",
+      "transform": "raw",
+      "period": "2024",
+      "pearson": 0.9820043094196196,
+      "spearman": 0.983200318422422,
+      "n": 29734
+    },
+    {
+      "pair": "PQ052_SO148",
+      "transform": "raw",
+      "period": "2025",
+      "pearson": 0.9808963163491384,
+      "spearman": 0.9844377290162472,
+      "n": 31649
+    },
+    {
+      "pair": "PQ052_SO148",
+      "transform": "anomaly",
+      "period": "2024-2025",
+      "pearson": 0.9062361042635989,
+      "spearman": 0.896493728031673,
+      "n": 60724,
+      "pearson_ci95_low": 0.8901458505489948,
+      "pearson_ci95_high": 0.9195548801358429
+    },
+    {
+      "pair": "PQ052_SO148",
+      "transform": "anomaly",
+      "period": "2024",
+      "pearson": 0.9077775174357982,
+      "spearman": 0.9058050204633785,
+      "n": 29075
+    },
+    {
+      "pair": "PQ052_SO148",
+      "transform": "anomaly",
+      "period": "2025",
+      "pearson": 0.9052536182104304,
+      "spearman": 0.8876040215291638,
+      "n": 31649
+    },
+    {
+      "pair": "PQ052_SO148",
+      "transform": "delta15",
+      "period": "2024-2025",
+      "pearson": 0.36332982863309427,
+      "spearman": 0.4269766398867289,
+      "n": 60136,
+      "pearson_ci95_low": 0.332612204192127,
+      "pearson_ci95_high": 0.39240337810362963
+    },
+    {
+      "pair": "PQ052_SO148",
+      "transform": "delta15",
+      "period": "2024",
+      "pearson": 0.3491640791161612,
+      "spearman": 0.4074668160829745,
+      "n": 29157
+    },
+    {
+      "pair": "PQ052_SO148",
+      "transform": "delta15",
+      "period": "2025",
+      "pearson": 0.38209497942689796,
+      "spearman": 0.4458385443285962,
+      "n": 30979
+    },
+    {
+      "pair": "IC437_JJ433",
+      "transform": "raw",
+      "period": "2024-2025",
+      "pearson": 0.9659034497771075,
+      "spearman": 0.9683347202236373,
+      "n": 61407,
+      "pearson_ci95_low": 0.9597860805723964,
+      "pearson_ci95_high": 0.970489545979711
+    },
+    {
+      "pair": "IC437_JJ433",
+      "transform": "raw",
+      "period": "2024",
+      "pearson": 0.9678160313140554,
+      "spearman": 0.9693475086057096,
+      "n": 31752
+    },
+    {
+      "pair": "IC437_JJ433",
+      "transform": "raw",
+      "period": "2025",
+      "pearson": 0.9638448516632019,
+      "spearman": 0.9662556756531756,
+      "n": 29655
+    },
+    {
+      "pair": "IC437_JJ433",
+      "transform": "anomaly",
+      "period": "2024-2025",
+      "pearson": 0.8043077504984717,
+      "spearman": 0.8183996451968235,
+      "n": 60740,
+      "pearson_ci95_low": 0.7826686182081816,
+      "pearson_ci95_high": 0.8237770964901144
+    },
+    {
+      "pair": "IC437_JJ433",
+      "transform": "anomaly",
+      "period": "2024",
+      "pearson": 0.8121293270728576,
+      "spearman": 0.823048563817054,
+      "n": 31085
+    },
+    {
+      "pair": "IC437_JJ433",
+      "transform": "anomaly",
+      "period": "2025",
+      "pearson": 0.797336252638517,
+      "spearman": 0.8139900499111017,
+      "n": 29655
+    },
+    {
+      "pair": "IC437_JJ433",
+      "transform": "delta15",
+      "period": "2024-2025",
+      "pearson": 0.2572843958417913,
+      "spearman": 0.36794562675527626,
+      "n": 57364,
+      "pearson_ci95_low": 0.2213433147832308,
+      "pearson_ci95_high": 0.2935177034983262
+    },
+    {
+      "pair": "IC437_JJ433",
+      "transform": "delta15",
+      "period": "2024",
+      "pearson": 0.2546400088914329,
+      "spearman": 0.3518585571623518,
+      "n": 29908
+    },
+    {
+      "pair": "IC437_JJ433",
+      "transform": "delta15",
+      "period": "2025",
+      "pearson": 0.2599236353326643,
+      "spearman": 0.3847001916075469,
+      "n": 27456
+    }
+  ],
+  "partial_correlations": [
+    {
+      "pair": "PQ052_SO148",
+      "target": "PQ052",
+      "donor": "SO148",
+      "period": "2024-2025",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.3645044658778179,
+      "n": 60934,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "PQ052",
+      "donor": "SO148",
+      "period": "2024-2025",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.2991429245214776,
+      "n": 59885,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "PQ052",
+      "donor": "SO148",
+      "period": "2024",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.3742004792209762,
+      "n": 29536,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "PQ052",
+      "donor": "SO148",
+      "period": "2024",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.289174166355114,
+      "n": 28703,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "PQ052",
+      "donor": "SO148",
+      "period": "2025",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.36211569080521566,
+      "n": 31398,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "PQ052",
+      "donor": "SO148",
+      "period": "2025",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.316967591368464,
+      "n": 31182,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "SO148",
+      "donor": "PQ052",
+      "period": "2024-2025",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.1380885111291628,
+      "n": 60547,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "SO148",
+      "donor": "PQ052",
+      "period": "2024-2025",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.28084795201304935,
+      "n": 59176,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "SO148",
+      "donor": "PQ052",
+      "period": "2024",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.17690272033152296,
+      "n": 29340,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "SO148",
+      "donor": "PQ052",
+      "period": "2024",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.28724072988357185,
+      "n": 28371,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "SO148",
+      "donor": "PQ052",
+      "period": "2025",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.09631024758680617,
+      "n": 31207,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "PQ052_SO148",
+      "target": "SO148",
+      "donor": "PQ052",
+      "period": "2025",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.2719099167953491,
+      "n": 30805,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "IC437",
+      "donor": "JJ433",
+      "period": "2024-2025",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.14063811248158867,
+      "n": 59274,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "IC437",
+      "donor": "JJ433",
+      "period": "2024-2025",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.1690855478441841,
+      "n": 56948,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "IC437",
+      "donor": "JJ433",
+      "period": "2024",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.14165982123070253,
+      "n": 30804,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "IC437",
+      "donor": "JJ433",
+      "period": "2024",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.17651770605623146,
+      "n": 29402,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "IC437",
+      "donor": "JJ433",
+      "period": "2025",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.14124013165579763,
+      "n": 28469,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "IC437",
+      "donor": "JJ433",
+      "period": "2025",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.1612861158126633,
+      "n": 27545,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "JJ433",
+      "donor": "IC437",
+      "period": "2024-2025",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.3895393395116098,
+      "n": 59178,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "JJ433",
+      "donor": "IC437",
+      "period": "2024-2025",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.32852241136003346,
+      "n": 56650,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "JJ433",
+      "donor": "IC437",
+      "period": "2024",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.3912897031368755,
+      "n": 30744,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "JJ433",
+      "donor": "IC437",
+      "period": "2024",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.32559742551723414,
+      "n": 29224,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "JJ433",
+      "donor": "IC437",
+      "period": "2025",
+      "horizon_minutes": 15,
+      "controls": 1,
+      "partial_pearson": 0.38909638715915695,
+      "n": 28433,
+      "definition": "Conditional covariance, not forecast fitting"
+    },
+    {
+      "pair": "IC437_JJ433",
+      "target": "JJ433",
+      "donor": "IC437",
+      "period": "2025",
+      "horizon_minutes": 15,
+      "controls": 4,
+      "partial_pearson": 0.3322889460583169,
+      "n": 27425,
+      "definition": "Conditional covariance, not forecast fitting"
+    }
+  ],
+  "quality_sensitivity": [
+    {
+      "pair": "PQ052_SO148",
+      "minimum_cs": 50,
+      "transform": "raw",
+      "pearson": 0.9814449938981461,
+      "n": 61383
+    },
+    {
+      "pair": "PQ052_SO148",
+      "minimum_cs": 50,
+      "transform": "anomaly",
+      "pearson": 0.9062361042635989,
+      "n": 60724
+    },
+    {
+      "pair": "PQ052_SO148",
+      "minimum_cs": 50,
+      "transform": "delta15",
+      "pearson": 0.36332982863309427,
+      "n": 60136
+    },
+    {
+      "pair": "IC437_JJ433",
+      "minimum_cs": 50,
+      "transform": "raw",
+      "pearson": 0.9659034497771075,
+      "n": 61407
+    },
+    {
+      "pair": "IC437_JJ433",
+      "minimum_cs": 50,
+      "transform": "anomaly",
+      "pearson": 0.8043077504984717,
+      "n": 60740
+    },
+    {
+      "pair": "IC437_JJ433",
+      "minimum_cs": 50,
+      "transform": "delta15",
+      "pearson": 0.2572843958417913,
+      "n": 57364
+    },
+    {
+      "pair": "PQ052_SO148",
+      "minimum_cs": 70,
+      "transform": "raw",
+      "pearson": 0.9834949328198503,
+      "n": 58708
+    },
+    {
+      "pair": "PQ052_SO148",
+      "minimum_cs": 70,
+      "transform": "anomaly",
+      "pearson": 0.913426586283071,
+      "n": 58075
+    },
+    {
+      "pair": "PQ052_SO148",
+      "minimum_cs": 70,
+      "transform": "delta15",
+      "pearson": 0.4157282306252324,
+      "n": 56068
+    },
+    {
+      "pair": "IC437_JJ433",
+      "minimum_cs": 70,
+      "transform": "raw",
+      "pearson": 0.9749289805055054,
+      "n": 52601
+    },
+    {
+      "pair": "IC437_JJ433",
+      "minimum_cs": 70,
+      "transform": "anomaly",
+      "pearson": 0.8489315524755016,
+      "n": 51937
+    },
+    {
+      "pair": "IC437_JJ433",
+      "minimum_cs": 70,
+      "transform": "delta15",
+      "pearson": 0.36070804272034773,
+      "n": 45150
+    },
+    {
+      "pair": "PQ052_SO148",
+      "minimum_cs": 90,
+      "transform": "raw",
+      "pearson": 0.985964007682569,
+      "n": 45580
+    },
+    {
+      "pair": "PQ052_SO148",
+      "minimum_cs": 90,
+      "transform": "anomaly",
+      "pearson": 0.916237908660227,
+      "n": 44917
+    },
+    {
+      "pair": "PQ052_SO148",
+      "minimum_cs": 90,
+      "transform": "delta15",
+      "pearson": 0.47304977218211985,
+      "n": 38598
+    },
+    {
+      "pair": "IC437_JJ433",
+      "minimum_cs": 90,
+      "transform": "raw",
+      "pearson": 0.9837982361296965,
+      "n": 22178
+    },
+    {
+      "pair": "IC437_JJ433",
+      "minimum_cs": 90,
+      "transform": "anomaly",
+      "pearson": 0.8491325758575473,
+      "n": 19587
+    },
+    {
+      "pair": "IC437_JJ433",
+      "minimum_cs": 90,
+      "transform": "delta15",
+      "pearson": 0.45776519851330455,
+      "n": 13461
+    }
+  ],
+  "bootstrap": {
+    "repetitions": 2000,
+    "block_calendar_days": 7,
+    "seed": 20261102
+  },
+  "validation": {
+    "checks": [
+      "source_hashes_and_station_headers",
+      "full_2024_2025_grid_including_leap_day",
+      "no_2026_measurements",
+      "independent_coverage_counts",
+      "no_conflicting_duplicates",
+      "independent_bin_mean_aggregation",
+      "baseline_has_no_future_dependency",
+      "differences_do_not_bridge_missing_bins"
+    ],
+    "status": "passed",
+    "forecast_models_run": false
+  },
+  "forecast_models_run": false
+}

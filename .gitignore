@@ -11,3 +11,6 @@ checkpoints/
 *.joblib
 *.zip
 *.log
+~$*.docx
+shared/protocol/*.draft.json
+nearby-pairs-2024-2025/

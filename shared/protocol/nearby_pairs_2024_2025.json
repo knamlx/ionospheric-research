@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "experiment_id": "nearby_pairs_2024_2025_v1",
+  "status": "completed_2024_2025_results_published",
+  "period_start_utc": "2024-01-01T00:00:00Z",
+  "period_end_exclusive_utc": "2026-01-01T00:00:00Z",
+  "dataset_step_minutes": 15,
+  "forecast_horizon_minutes": 15,
+  "pairs": [
+    [
+      "PQ052",
+      "SO148"
+    ],
+    [
+      "IC437",
+      "JJ433"
+    ]
+  ],
+  "directions": [
+    {
+      "target": "PQ052",
+      "donors": [
+        "SO148"
+      ]
+    },
+    {
+      "target": "SO148",
+      "donors": [
+        "PQ052"
+      ]
+    },
+    {
+      "target": "IC437",
+      "donors": [
+        "JJ433"
+      ]
+    },
+    {
+      "target": "JJ433",
+      "donors": [
+        "IC437"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "exploratory",
+      "start_utc": "2025-01-01T00:00:00Z",
+      "end_exclusive_utc": "2025-04-01T00:00:00Z",
+      "windows_days": [
+        7,
+        21,
+        28
+      ]
+    },
+    {
+      "name": "evaluation",
+      "start_utc": "2025-04-01T00:00:00Z",
+      "end_exclusive_utc": "2026-01-01T00:00:00Z",
+      "windows_days": [
+        21
+      ]
+    }
+  ],
+  "hidden_minutes": [
+    0,
+    15,
+    30,
+    60,
+    120
+  ],
+  "donor_delay_minutes": [
+    0,
+    15,
+    30
+  ],
+  "continuous_outage": {
+    "starts_utc": [
+      "06:00",
+      "18:00"
+    ],
+    "duration_minutes": 120,
+    "checkpoint_minutes": [
+      15,
+      30,
+      60,
+      120
+    ]
+  },
+  "models": [
+    "LinearRegression",
+    "ElasticNet",
+    "RandomForest",
+    "XGBoost",
+    "CatBoost"
+  ],
+  "model_params": {
+    "ElasticNet": {
+      "alpha": 1.0,
+      "l1_ratio": 0.5,
+      "max_iter": 5000,
+      "random_state": 42
+    },
+    "RandomForest": {
+      "n_estimators": 300,
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "n_jobs": 1,
+      "random_state": 42
+    },
+    "XGBoost": {
+      "objective": "reg:squarederror",
+      "n_estimators": 300,
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "n_jobs": 1,
+      "verbosity": 0,
+      "random_state": 42
+    },
+    "CatBoost": {
+      "loss_function": "RMSE",
+      "iterations": 500,
+      "depth": 6,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 3.0,
+      "random_seed": 42,
+      "thread_count": 1,
+      "verbose": false
+    }
+  },
+  "parameter_search": false,
+  "random_seed": 42,
+  "features": {
+    "lags": [
+      "15min",
+      "30min",
+      "1h",
+      "3h",
+      "6h",
+      "12h",
+      "24h",
+      "48h",
+      "7D"
+    ],
+    "diff_lags": [
+      "15min",
+      "1h",
+      "3h",
+      "24h"
+    ],
+    "minimum_train_coverage": 0.3,
+    "maximum_local_age_minutes": 1440,
+    "donor_features": "fixed donor state and historical lags; never a station from the other pair"
+  },
+  "minimum_train_rows": 48,
+  "minimum_eval_rows": 2,
+  "primary_score_requires_fresh_donor": true,
+  "same_train_and_test_rows_for_local_and_interstation": true,
+  "common_history_eligibility_across_gaps": true,
+  "data_filter": {
+    "foF2_min_mhz": 0.5,
+    "foF2_max_mhz": 25,
+    "minimum_cs": 50,
+    "accept_manual_cs_999": true,
+    "accept_unknown_cs_minus_1": false
+  },
+  "bootstrap_repetitions": 2000,
+  "bootstrap_block_calendar_days": 7,
+  "multiplicity_family_size": 4,
+  "default_workers": 2,
+  "data_directory": "data",
+  "output_directory": "local_data/nearby_pairs_run_2024_2025",
+  "evaluation_disclosure": "Chronological evaluation; both years already inspected for coverage and correlation. Not a blinded independent confirmation set.",
+  "scoring_notes": [
+    "All five estimators have fixed parameters; no tuning or early stopping",
+    "Daily rolling refits use only labels whose measurement intervals end by the beginning of the test day",
+    "All windows are compared on common timestamps within phase/target/gap",
+    "Hidden scenarios share local-history eligibility; outages are fixed pre-outage anchors, not recursive local reconstructions",
+    "Delayed donor metrics use the intersection of donor availability at 0, 15 and 30 minutes",
+    "Continuous outages reuse predictions at 15/30/60/120-minute checkpoints, two fixed episodes per UTC day",
+    "No reuse of any completed 2026 experiment fits or checkpoints"
+  ],
+  "primary_comparisons": {
+    "interstation_forecast": {
+      "phase": "evaluation",
+      "model": "LinearRegression",
+      "gap_minutes": 0,
+      "window_days": 21,
+      "scenario": "standard"
+    },
+    "gap_compensation": {
+      "phase": "evaluation",
+      "model": "CatBoost",
+      "gap_minutes": 60,
+      "window_days": 21,
+      "scenario": "standard"
+    }
+  }
+}

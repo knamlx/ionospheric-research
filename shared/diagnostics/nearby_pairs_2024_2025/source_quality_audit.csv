@@ -1,0 +1,5 @@
+station,unique_observation_rows,boundary_duplicates_removed,conflicting_duplicate_timestamps,physical_foF2_rows,unknown_cs_rows,low_cs_physical_rows,invalid_foF2_rows
+PQ052,231102,2,0,231102,0,11407,0
+SO148,201742,1,0,201742,0,17208,0
+IC437,136000,2,0,136000,0,16671,0
+JJ433,137206,2,0,137206,0,17538,0

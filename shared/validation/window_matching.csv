@@ -1,7 +1,0 @@
-phase,target,common_origins,union_origins,excluded_origins
-confirmation,DB049,8310,8310,0
-confirmation,EB040,8520,8520,0
-confirmation,PQ052,8256,8256,0
-exploratory,DB049,8479,8479,0
-exploratory,EB040,8395,8395,0
-exploratory,PQ052,5737,5871,134

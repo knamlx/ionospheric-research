@@ -1,0 +1,151 @@
+{
+  "period_start": "2024-01-01",
+  "period_end_exclusive": "2026-01-01",
+  "stations": {
+    "PQ052": {
+      "station": "PQ052",
+      "country": "Czech Republic",
+      "location": "PRUHONICE",
+      "system_type": "DPS4",
+      "latitude": 50.0,
+      "longitude": 14.6,
+      "longitude_180": 14.599999999999994,
+      "build_date": "2003",
+      "giro_link": "https://giro.uml.edu/ionoweb/?station=PQ052",
+      "metadata_source": "GIRO response"
+    },
+    "SO148": {
+      "station": "SO148",
+      "country": "Hungary",
+      "location": "SOPRON",
+      "system_type": "DPS4D",
+      "latitude": 47.6,
+      "longitude": 16.7,
+      "longitude_180": 16.69999999999999,
+      "build_date": "2018-01",
+      "giro_link": "https://giro.uml.edu/ionoweb/?station=SO148",
+      "metadata_source": "GIRO response"
+    },
+    "IC437": {
+      "station": "IC437",
+      "country": "South Korea",
+      "location": "I-CHEON",
+      "system_type": "DPS4D",
+      "latitude": 37.1,
+      "longitude": 127.5,
+      "longitude_180": 127.5,
+      "build_date": "2023-09",
+      "giro_link": "https://giro.uml.edu/ionoweb/?station=IC437",
+      "metadata_source": "GIRO response"
+    },
+    "JJ433": {
+      "station": "JJ433",
+      "country": "South Korea",
+      "location": "JEJU",
+      "system_type": "DPS4D",
+      "latitude": 33.4,
+      "longitude": 126.3,
+      "longitude_180": 126.30000000000001,
+      "build_date": "2023-10",
+      "giro_link": "https://giro.uml.edu/ionoweb/?station=JJ433",
+      "metadata_source": "GIRO response"
+    }
+  },
+  "sources": [
+    {
+      "station": "IC437",
+      "year": 2025,
+      "file": "raw/IC437_2025-01-01_2026-01-01.txt",
+      "sha256": "ddb8b0c722879b9fe69c93b09510ecaa287e2a9ba8287204467fb19fc4d9178b",
+      "bytes": 2621206
+    },
+    {
+      "station": "JJ433",
+      "year": 2025,
+      "file": "raw/JJ433_2025-01-01_2026-01-01.txt",
+      "sha256": "c0b920beb9265d4486be17a17dce22c08a30c15f5398e61ac4e936e19eeebedd",
+      "bytes": 2658097
+    },
+    {
+      "station": "PQ052",
+      "year": 2025,
+      "file": "raw/PQ052_2025-01-01_2026-01-01.txt",
+      "sha256": "094c4167ada8d0c4ffd58b68e6390f9bdf76cf608d2aeba756ff6433da345a3e",
+      "bytes": 4514967
+    },
+    {
+      "station": "SO148",
+      "year": 2025,
+      "file": "raw/SO148_2025-01-01_2026-01-01.txt",
+      "sha256": "179d204b5e76999c7552b478fa8e827bac1c87b7ea8fa390053167fe20793e0a",
+      "bytes": 3854773
+    },
+    {
+      "station": "IC437",
+      "year": 2024,
+      "file": "raw/IC437_2024-01-01_2024-07-01.txt",
+      "sha256": "5cdfa843b2ff97dfe718ad7485b5d59bd810ae1e479f20e54f462a00a991260f",
+      "bytes": 1322542
+    },
+    {
+      "station": "IC437",
+      "year": 2024,
+      "file": "raw/IC437_2024-07-01_2025-01-01.txt",
+      "sha256": "b2a035fcdcd9a7397eba8485e3c52d9a5597b77719b7a95c3c66ea32dedba23d",
+      "bytes": 1363103
+    },
+    {
+      "station": "JJ433",
+      "year": 2024,
+      "file": "raw/JJ433_2024-01-01_2024-07-01.txt",
+      "sha256": "03de06e859e6fbc56a2b06ac04986f99a94f5ddedae106f571f793c2ea7db7a8",
+      "bytes": 1340363
+    },
+    {
+      "station": "JJ433",
+      "year": 2024,
+      "file": "raw/JJ433_2024-07-01_2025-01-01.txt",
+      "sha256": "a6a6668f6c4a88e2a7dbcbad966d4dbb17ce78db3a60d01f8174543983931798",
+      "bytes": 1355417
+    },
+    {
+      "station": "PQ052",
+      "year": 2024,
+      "file": "raw/PQ052_2024-01-01_2024-07-01.txt",
+      "sha256": "7579e2c2544fb80375d9f56a1106ccaa73502af9aea6e65345865c0c076a054d",
+      "bytes": 1969554
+    },
+    {
+      "station": "PQ052",
+      "year": 2024,
+      "file": "raw/PQ052_2024-07-01_2025-01-01.txt",
+      "sha256": "8d5588e41fe0fa677c67bf601d5b42b31f7d495aa45798aed8fd1e4332b60e5a",
+      "bytes": 2531313
+    },
+    {
+      "station": "SO148",
+      "year": 2024,
+      "file": "raw/SO148_2024-01-01_2024-07-01.txt",
+      "sha256": "8243bc6090a257e4281b8119583993eefe7b2dca8a38153a2869c0ee7e012ac6",
+      "bytes": 1973532
+    },
+    {
+      "station": "SO148",
+      "year": 2024,
+      "file": "raw/SO148_2024-07-01_2025-01-01.txt",
+      "sha256": "024413224cddec3faa1ecf0636b0498ad78df905ab52a0e77e3bc6d0979b20c1",
+      "bytes": 2042442
+    }
+  ],
+  "expected_valid_bins": {
+    "PQ052": 67065,
+    "SO148": 64048,
+    "IC437": 65118,
+    "JJ433": 65060
+  },
+  "expected_pair_bins": {
+    "IC437_JJ433": 61407,
+    "PQ052_SO148": 61383
+  },
+  "source_interface": "https://giro.uml.edu/didbase/scaled.php"
+}
